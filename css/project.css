@@ -1,0 +1,183 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+#section1{ 
+    position: relative;
+    display: grid;
+    grid-template:  "nav nav nav nav nav nav nav nav nav" 50px  
+                    "na1 na1 na1 na1 na1 na1 na1 na1 na1" 50px
+                    "man man man man man as2 as2 as2 as2" 400px
+                    "as as as as as as as as as" 300px
+                    "as4 as4 as4 as4 as4 as4 as4 as4 as4" 300px
+                    "as51 as51 as51 as51 as51 as51 . . . " 200px
+                    "as51 as51 as51 as51 as51 as51 as5 as5 as5" 300px
+                    ". . . as6 as6 as6 . . ." 500px
+                    "as7 as7 as7 as7 as7 as7 as7 as7 as7" 500px
+                    "ft ft ft ft ft ft ft ft ft"200px/1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                    gap: 10px;
+                    background-color: white;
+                    margin-top: -10px;
+}
+
+nav {
+    background-color: white;
+}
+nav >div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align:justify;
+    font: 5px #212529;
+    position: fixed;
+    gap: 50px;
+    background-color: white;
+    z-index: 1;
+    padding-left: 10px;
+    padding-right:100px;
+    border: 20px;
+
+}
+#logo {
+    margin-top: 10px;
+}
+.dc1 >a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #212529;
+    grid-area: nav;
+    padding-left: ;
+  
+}
+.dc1 {
+    padding-top: 15px;
+    
+}
+#nav1 {
+    grid-area: na1;
+    background-color: aliceblue;
+    font: 2px #212529;
+    text-align: center;
+    justify-content: center;
+
+}
+main {
+    grid-area: man;
+    color: #18425d ;
+    padding-right: 100px;
+    font-size: 38px;
+}
+#aside1 {
+    grid-area: as2;
+    margin-top: 50px;
+    width: 400px;
+    height: 400px;
+    overflow: none;
+    background-image: url("./dots.svg");
+}
+iframe {
+    margin-left: 35px;
+    margin-top: 70px;
+}
+video {
+    border-radius: 30px;
+    margin-left: 20px;
+    width: 450px;
+    height: 270px;
+
+}
+#aside2 {
+    justify-self: center;
+    grid-area: as4;
+    background-color:#18425d ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    gap: 10px;
+    width: 90%; height: 200px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 110px;
+}
+#racb {
+    width: 100px; height: 20px;
+    border: 1px solid #18425d;
+    background-color: aqua;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom:10px;
+    text-align: justify;
+    text-decoration: none;
+}
+#db {
+    width: 100px; height: 20px;
+    border: 1px solid white;
+    background-color: #18425d;
+    color: white ;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom:10px ;
+    text-align: justify;
+    text-decoration: none;
+}
+#as5 {
+    grid-area: as5;
+    color: #18425d;
+    width: 250px;
+}
+
+ @keyframes as51{
+    from {
+        transform: translate(0px 0px);
+    }
+    to {
+        transform: translate(100px 50px);
+    }
+}
+#as51 {
+    grid-area: as51;
+    font-size: 50px;
+    padding-left: 50px;
+    animation-name: bounce;
+    animation-duration: 3s;
+    animation-direction:alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#nig{
+   width: 25px;
+
+}
+#as6{
+grid-area: as6;
+margin-top: 200px;
+text-align:left;
+
+}
+#as7{
+    grid-area: as7;
+    display: flex;
+    flex-direction: column;
+    position: static;
+    background-image: url("./bigimg-1.jpg");
+    /* color: white; */
+ }
+ #
+ .p1 {
+    font-size: xx-large;
+    margin-bottom: 200px;
+    color: black;
+ }
+ .p2 {
+    font-size: xx-small;
+    margin-bottom: 200px;
+    color: black;
+ }
+#ft {
+    grid-area: ft;
+}
